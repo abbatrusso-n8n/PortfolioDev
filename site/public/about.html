@@ -53,8 +53,15 @@
 <a class="text-slate-400 hover:text-white transition-colors font-medium text-sm" href="/projects">Проекты</a>
 <a class="text-slate-400 hover:text-white transition-colors font-medium text-sm" href="/contact">Контакты</a>
 </div>
-<div class="md:hidden">
-<span class="material-symbols-outlined text-white">menu</span>
+<button id="mobile-menu-btn" class="md:hidden flex items-center justify-center w-10 h-10 rounded-lg text-slate-400 hover:text-white hover:bg-white/5 transition-colors" aria-label="Меню">
+<span class="material-symbols-outlined" id="menu-icon">menu</span>
+</button>
+</div>
+<div id="mobile-menu" class="hidden md:hidden border-t border-white/5 bg-[#0a0a0f]/95 backdrop-blur-md">
+<div class="max-w-6xl mx-auto px-6 py-4 flex flex-col gap-1">
+<a class="px-4 py-3 rounded-xl text-accent font-semibold text-sm hover:bg-white/5 transition-colors" href="/about">Обо мне</a>
+<a class="px-4 py-3 rounded-xl text-slate-400 hover:text-white hover:bg-white/5 transition-colors font-medium text-sm" href="/projects">Проекты</a>
+<a class="px-4 py-3 rounded-xl text-slate-400 hover:text-white hover:bg-white/5 transition-colors font-medium text-sm" href="/contact">Контакты</a>
 </div>
 </div>
 </nav>
@@ -218,4 +225,14 @@
 </div>
 </footer>
 
+<script>
+const btn = document.getElementById('mobile-menu-btn');
+const menu = document.getElementById('mobile-menu');
+const icon = document.getElementById('menu-icon');
+btn.addEventListener('click', () => {
+  const isOpen = !menu.classList.contains('hidden');
+  menu.classList.toggle('hidden');
+  icon.textContent = isOpen ? 'menu' : 'close';
+});
+</script>
 </body></html>
