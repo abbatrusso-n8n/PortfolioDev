@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html class="dark" lang="ru"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Обо мне | Имя Фамилия</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<style type="text/tailwindcss">
+        @layer base {
+            body {
+                font-family: 'Inter', sans-serif;
+                background-color: #0a0a0f;
+                color: #f8fafc;
+            }
+        }
+        :root {
+            --accent-color: #6C63FF;
+            --bg-dark: #0a0a0f;
+        }
+        .frosted-glass {
+            background: rgba(10, 10, 15, 0.75);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+        }
+        .text-accent { color: var(--accent-color); }
+        .bg-accent { background-color: var(--accent-color); }
+        .border-accent { border-color: var(--accent-color); }
+        .timeline-dot::after {
+            content: '';
+            position: absolute;
+            left: 50%;
+            top: 24px;
+            bottom: -40px;
+            width: 2px;
+            background: linear-gradient(to bottom, var(--accent-color), transparent);
+            transform: translateX(-50%);
+        }
+        .timeline-item:last-child .timeline-dot::after {
+            display: none;
+        }
+    </style>
+</head>
+<body class="antialiased selection:bg-[#6C63FF]/30">
+<nav class="fixed top-0 left-0 right-0 z-50 frosted-glass">
+<div class="max-w-6xl mx-auto px-6 h-20 flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="text-xl font-extrabold tracking-tight text-white">Имя Фамилия</span>
+</div>
+<div class="hidden md:flex items-center gap-8">
+<a class="text-accent font-semibold text-sm" href="about.html">Обо мне</a>
+<a class="text-slate-400 hover:text-white transition-colors font-medium text-sm" href="projects.html">Проекты</a>
+<a class="text-slate-400 hover:text-white transition-colors font-medium text-sm" href="contact.html">Контакты</a>
+</div>
+<div class="md:hidden">
+<span class="material-symbols-outlined text-white">menu</span>
+</div>
+</div>
+</nav>
+<main class="pt-32">
+<section class="max-w-4xl mx-auto px-6 mb-32">
+<div class="flex flex-col items-center text-center">
+<div class="relative mb-10">
+<div class="absolute inset-0 bg-accent rounded-full blur-2xl opacity-20"></div>
+<img alt="Avatar" class="relative w-32 h-32 md:w-40 md:h-40 rounded-full object-cover border-4 border-slate-900 shadow-2xl" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBpGFRohSLJQpnFETUOlIiyjzQ9Dyj7BMDjf8N0LUpGpuZB3NAT2dG807tmDuH5_3YxxCvoGU68jlvrEK4A0uKmfkSiad0w1XHrkujXm2SiEC6thCHOndYsluR7zEv3JCkMBFY4crHa5S8FbkCfuojr48IaLWhEfEoJ61U3sC1FNjjQteDItLP8eL0ai5eSSABDHYHuTZslKIfScDIAXsmUNVlYefAADmAImNcMLc18K6rpJtUW_7Oy78OXheauAS52mPK9VeQwK7Cp"/>
+</div>
+<h1 class="text-5xl md:text-7xl font-black mb-8 tracking-tighter text-white">
+                    Обо мне
+                </h1>
+<div class="max-w-2xl text-lg md:text-xl text-slate-400 leading-relaxed mb-12 space-y-4">
+<p>Я — опытный разработчик, специализирующийся на создании современных и производительных веб-интерфейсов. Мой подход объединяет чистую архитектуру кода с интуитивно понятным дизайном для решения сложных бизнес-задач. Постоянно расширяю свой стек технологий, чтобы предлагать наиболее эффективные решения для каждого проекта.</p>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-3 gap-6 w-full">
+<div class="p-6 rounded-2xl bg-slate-900/50 border border-slate-800 flex flex-col items-center">
+<span class="text-3xl font-bold text-accent mb-1">5+ лет</span>
+<span class="text-sm text-slate-500 font-medium">опыта</span>
+</div>
+<div class="p-6 rounded-2xl bg-slate-900/50 border border-slate-800 flex flex-col items-center">
+<span class="text-3xl font-bold text-accent mb-1">30+</span>
+<span class="text-sm text-slate-500 font-medium">проектов</span>
+</div>
+<div class="p-6 rounded-2xl bg-slate-900/50 border border-slate-800 flex flex-col items-center">
+<span class="text-3xl font-bold text-accent mb-1">10+</span>
+<span class="text-sm text-slate-500 font-medium">клиентов</span>
+</div>
+</div>
+</div>
+</section>
+<section class="max-w-6xl mx-auto px-6 mb-32">
+<div class="flex items-center gap-4 mb-12">
+<div class="h-px flex-1 bg-slate-800"></div>
+<h2 class="text-2xl font-bold text-white px-4">Навыки</h2>
+<div class="h-px flex-1 bg-slate-800"></div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-12">
+<div>
+<h3 class="text-lg font-bold text-white mb-6 flex items-center gap-2">
+<span class="material-symbols-outlined text-accent text-xl">layers</span> Frontend
+                    </h3>
+<div class="flex flex-wrap gap-2">
+<span class="px-4 py-2 rounded-full bg-slate-900 border border-slate-800 text-sm text-slate-300">React</span>
+<span class="px-4 py-2 rounded-full bg-slate-900 border border-slate-800 text-sm text-slate-300">TypeScript</span>
+<span class="px-4 py-2 rounded-full bg-slate-900 border border-slate-800 text-sm text-slate-300">Next.js</span>
+<span class="px-4 py-2 rounded-full bg-slate-900 border border-slate-800 text-sm text-slate-300">Tailwind CSS</span>
+</div>
+</div>
+<div>
+<h3 class="text-lg font-bold text-white mb-6 flex items-center gap-2">
+<span class="material-symbols-outlined text-accent text-xl">database</span> Backend
+                    </h3>
+<div class="flex flex-wrap gap-2">
+<span class="px-4 py-2 rounded-full bg-slate-900 border border-slate-800 text-sm text-slate-300">Node.js</span>
+<span class="px-4 py-2 rounded-full bg-slate-900 border border-slate-800 text-sm text-slate-300">Python</span>
+<span class="px-4 py-2 rounded-full bg-slate-900 border border-slate-800 text-sm text-slate-300">PostgreSQL</span>
+</div>
+</div>
+<div>
+<h3 class="text-lg font-bold text-white mb-6 flex items-center gap-2">
+<span class="material-symbols-outlined text-accent text-xl">terminal</span> DevOps
+                    </h3>
+<div class="flex flex-wrap gap-2">
+<span class="px-4 py-2 rounded-full bg-slate-900 border border-slate-800 text-sm text-slate-300">Docker</span>
+<span class="px-4 py-2 rounded-full bg-slate-900 border border-slate-800 text-sm text-slate-300">Git</span>
+<span class="px-4 py-2 rounded-full bg-slate-900 border border-slate-800 text-sm text-slate-300">CI/CD</span>
+</div>
+</div>
+</div>
+</section>
+<section class="max-w-4xl mx-auto px-6 mb-32">
+<h2 class="text-3xl font-bold text-white mb-16 flex items-center gap-3">
+<span class="text-accent material-symbols-outlined">work</span> Опыт работы
+            </h2>
+<div class="space-y-12">
+<div class="timeline-item flex gap-6 relative">
+<div class="timeline-dot relative z-10">
+<div class="w-6 h-6 rounded-full bg-accent border-4 border-[#0a0a0f]"></div>
+</div>
+<div class="pb-8">
+<div class="flex flex-col md:flex-row md:items-center justify-between gap-2 mb-2">
+<h3 class="text-xl font-bold text-white">Senior Frontend Developer</h3>
+<span class="text-slate-500 text-sm font-medium bg-slate-900 px-3 py-1 rounded-full border border-slate-800">2021 — Наст. время</span>
+</div>
+<p class="text-accent font-medium mb-3">Технологическая компания "Инновации"</p>
+<p class="text-slate-400 leading-relaxed">Руководство разработкой пользовательских интерфейсов для крупных корпоративных платформ. Внедрение модульной архитектуры и оптимизация производительности приложений.</p>
+</div>
+</div>
+<div class="timeline-item flex gap-6 relative">
+<div class="timeline-dot relative z-10">
+<div class="w-6 h-6 rounded-full bg-slate-800 border-4 border-[#0a0a0f]"></div>
+</div>
+<div class="pb-8">
+<div class="flex flex-col md:flex-row md:items-center justify-between gap-2 mb-2">
+<h3 class="text-xl font-bold text-white">Fullstack Developer</h3>
+<span class="text-slate-500 text-sm font-medium bg-slate-900 px-3 py-1 rounded-full border border-slate-800">2019 — 2021</span>
+</div>
+<p class="text-accent font-medium mb-3">Digital Агентство "Прорыв"</p>
+<p class="text-slate-400 leading-relaxed">Разработка и поддержка полного цикла веб-приложений. Интеграция API сторонних сервисов и проектирование баз данных для высоконагруженных систем.</p>
+</div>
+</div>
+<div class="timeline-item flex gap-6 relative">
+<div class="timeline-dot relative z-10">
+<div class="w-6 h-6 rounded-full bg-slate-800 border-4 border-[#0a0a0f]"></div>
+</div>
+<div>
+<div class="flex flex-col md:flex-row md:items-center justify-between gap-2 mb-2">
+<h3 class="text-xl font-bold text-white">Junior Web Developer</h3>
+<span class="text-slate-500 text-sm font-medium bg-slate-900 px-3 py-1 rounded-full border border-slate-800">2018 — 2019</span>
+</div>
+<p class="text-accent font-medium mb-3">Стартап "ЭкоСистема"</p>
+<p class="text-slate-400 leading-relaxed">Создание адаптивных лендингов и реализация базового функционала на JavaScript. Работа в тесном сотрудничестве с дизайнерами и тестировщиками.</p>
+</div>
+</div>
+</div>
+</section>
+<section class="max-w-6xl mx-auto px-6 mb-32">
+<h2 class="text-3xl font-bold text-white mb-12 flex items-center gap-3">
+<span class="text-accent material-symbols-outlined">school</span> Образование
+            </h2>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+<div class="p-8 rounded-2xl bg-slate-900/40 border border-slate-800 hover:border-accent/30 transition-colors group">
+<span class="material-symbols-outlined text-slate-500 group-hover:text-accent transition-colors mb-4 text-3xl">menu_book</span>
+<h3 class="text-xl font-bold text-white mb-2">Информационные системы и технологии</h3>
+<p class="text-slate-400">МГТУ им. Н.Э. Баумана</p>
+<p class="text-slate-600 text-sm mt-4">2014 — 2018 • Бакалавриат</p>
+</div>
+<div class="p-8 rounded-2xl bg-slate-900/40 border border-slate-800 hover:border-accent/30 transition-colors group">
+<span class="material-symbols-outlined text-slate-500 group-hover:text-accent transition-colors mb-4 text-3xl">workspace_premium</span>
+<h3 class="text-xl font-bold text-white mb-2">Advanced Software Architecture</h3>
+<p class="text-slate-400">Онлайн Университет Программирования</p>
+<p class="text-slate-600 text-sm mt-4">2022 • Повышение квалификации</p>
+</div>
+</div>
+</section>
+</main>
+<footer class="border-t border-slate-900 py-16 bg-[#0a0a0f]">
+<div class="max-w-6xl mx-auto px-6">
+<div class="flex flex-col md:flex-row justify-between items-center gap-10">
+<div class="flex flex-col items-center md:items-start gap-2">
+<span class="text-xl font-bold text-white">Имя Фамилия</span>
+<span class="text-slate-500 text-sm">© 2024 Все права защищены</span>
+</div>
+<div class="flex items-center gap-8">
+<a class="text-slate-400 hover:text-accent transition-colors flex items-center gap-2" href="#">
+<span class="material-symbols-outlined text-xl">code</span>
+<span class="font-medium text-sm">GitHub</span>
+</a>
+<a class="text-slate-400 hover:text-accent transition-colors flex items-center gap-2" href="#">
+<span class="material-symbols-outlined text-xl">send</span>
+<span class="font-medium text-sm">Telegram</span>
+</a>
+<a class="text-slate-400 hover:text-accent transition-colors flex items-center gap-2" href="#">
+<span class="material-symbols-outlined text-xl">person_pin</span>
+<span class="font-medium text-sm">LinkedIn</span>
+</a>
+</div>
+</div>
+</div>
+</footer>
+
+</body></html>

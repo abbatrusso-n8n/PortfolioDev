@@ -1,0 +1,5 @@
+{
+  "projectId": "projects/10511742379837625783",
+  "deviceType": "DESKTOP",
+  "prompt": "Create a modern personal portfolio homepage for a developer. Dark theme (#0a0a0f background), accent color electric violet-blue (#6C63FF). Font: Inter sans-serif. Clean, minimalist, professional style.\n\nPage structure:\n1. Navigation bar - logo/name on the left, links on the right: About, Projects, Contact\n2. Hero section - large heading 'Hello, I am a Developer', subtitle 'Full-Stack Developer', short bio (2-3 sentences), two buttons: 'My Projects' (primary filled) and 'Contact Me' (outline)\n3. Skills section - tech tags/icons: JavaScript, TypeScript, React, Node.js, Python, Git\n4. Recent Projects section - 3 project cards with placeholder content, dark card backgrounds with subtle borders\n5. Footer - copyright, social links: GitHub, LinkedIn, Telegram\n\nRequirements:\n- Fully responsive layout\n- Smooth scroll animations\n- Hover effects on buttons and cards\n- All labels in Russian language"
+}

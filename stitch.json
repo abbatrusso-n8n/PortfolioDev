@@ -1,0 +1,11 @@
+{
+  "projectId": "projects/10511742379837625783",
+  "projectIdShort": "10511742379837625783",
+  "title": "Personal Portfolio",
+  "screens": {
+    "index": "5322dcae2c634e0da929b2026da0a6d3",
+    "projects": "af1d088b8271494481d81c6c1cde056b",
+    "about": "5b23604f55a5484c863bb83e07e4cb22",
+    "contact": "1ae3c2599c7f44efbf1cbc54e2b0cc55"
+  }
+}
