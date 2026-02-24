@@ -17,10 +17,11 @@
             theme: {
                 extend: {
                     colors: {
-                        "primary": "#6961ff",
+                        "primary": "#1a7a3c",
+                        "primary-light": "#4ade80",
                         "background-light": "#f5f5f8",
-                        "background-dark": "#0a0a0f",
-                        "card-dark": "#16161e",
+                        "background-dark": "#060e08",
+                        "card-dark": "#0d1c10",
                     },
                     fontFamily: {
                         "display": ["Inter", "sans-serif"]
@@ -46,7 +47,7 @@
             left: 0;
             width: 100%;
             height: 2px;
-            background-color: #6961ff;
+            background-color: #1a7a3c;
             border-radius: 2px;
         }
     </style>
@@ -56,18 +57,15 @@
 <nav class="fixed top-0 w-full z-50 bg-background-light/80 dark:bg-background-dark/80 backdrop-blur-md border-b border-slate-200 dark:border-slate-800">
 <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
 <div class="flex items-center gap-3 group cursor-pointer">
-<div class="w-10 h-10 bg-primary rounded-xl flex items-center justify-center text-white shadow-lg shadow-primary/20">
-<span class="material-symbols-outlined text-2xl">code</span>
-</div>
-<span class="text-xl font-extrabold tracking-tight">Имя Фамилия</span>
+<img src="/logo.png" alt="БАМБУК" class="h-10 w-auto">
 </div>
 <div class="hidden md:flex items-center gap-10">
-<a class="text-sm font-medium hover:text-primary transition-colors" href="/">Главная</a>
-<a class="text-sm font-medium hover:text-primary transition-colors" href="/about">Обо мне</a>
-<a class="relative text-sm font-medium text-primary active-link" href="/projects">Проекты</a>
-<a class="text-sm font-medium hover:text-primary transition-colors" href="/contact">Контакты</a>
+<a class="text-sm font-medium hover:text-primary-light transition-colors" href="/">Главная</a>
+<a class="text-sm font-medium hover:text-primary-light transition-colors" href="/about">Обо мне</a>
+<a class="relative text-sm font-medium text-primary-light active-link" href="/projects">Проекты</a>
+<a class="text-sm font-medium hover:text-primary-light transition-colors" href="/contact">Контакты</a>
 </div>
-<a class="hidden md:inline-flex bg-primary hover:bg-primary/90 text-white px-6 py-2.5 rounded-full text-sm font-bold transition-all shadow-lg shadow-primary/20" href="/contact">
+<a class="hidden md:inline-flex bg-primary hover:bg-primary/90 text-white px-6 py-2.5 rounded-full text-sm font-bold transition-all shadow-[0_4px_20px_rgba(74,222,128,0.2)]" href="/contact">
                 Связаться
             </a>
 <button id="mobile-menu-btn" class="md:hidden flex items-center justify-center w-10 h-10 rounded-lg text-slate-400 hover:text-white hover:bg-white/5 transition-colors" aria-label="Меню">
@@ -76,10 +74,10 @@
 </div>
 <div id="mobile-menu" class="hidden md:hidden border-t border-slate-200 dark:border-slate-800 bg-background-light/95 dark:bg-background-dark/95 backdrop-blur-md">
 <div class="max-w-7xl mx-auto px-6 py-4 flex flex-col gap-1">
-<a class="px-4 py-3 rounded-xl text-slate-400 hover:text-primary hover:bg-white/5 transition-colors font-medium text-sm" href="/">Главная</a>
-<a class="px-4 py-3 rounded-xl text-slate-400 hover:text-primary dark:hover:text-primary hover:bg-white/5 transition-colors font-medium text-sm" href="/about">Обо мне</a>
-<a class="px-4 py-3 rounded-xl text-primary font-semibold text-sm hover:bg-white/5 transition-colors" href="/projects">Проекты</a>
-<a class="px-4 py-3 rounded-xl text-slate-400 hover:text-primary hover:bg-white/5 transition-colors font-medium text-sm" href="/contact">Контакты</a>
+<a class="px-4 py-3 rounded-xl text-slate-400 hover:text-primary-light hover:bg-white/5 transition-colors font-medium text-sm" href="/">Главная</a>
+<a class="px-4 py-3 rounded-xl text-slate-400 hover:text-primary-light hover:bg-white/5 transition-colors font-medium text-sm" href="/about">Обо мне</a>
+<a class="px-4 py-3 rounded-xl text-primary-light font-semibold text-sm hover:bg-white/5 transition-colors" href="/projects">Проекты</a>
+<a class="px-4 py-3 rounded-xl text-slate-400 hover:text-primary-light hover:bg-white/5 transition-colors font-medium text-sm" href="/contact">Контакты</a>
 </div>
 </div>
 </nav>
@@ -87,7 +85,7 @@
 <!-- Header Section -->
 <div class="mb-12">
 <h1 class="text-5xl md:text-6xl font-black mb-6 tracking-tight">
-                Мои <span class="text-primary">проекты</span>
+                Мои <span class="text-primary-light">проекты</span>
 </h1>
 <p class="text-slate-500 dark:text-slate-400 text-lg max-w-2xl leading-relaxed">
                 Коллекция моих последних работ, где я сочетаю эстетичный дизайн и производительный код. От интерфейсов до сложных серверных решений.
@@ -96,8 +94,8 @@
 <!-- Filters -->
 <div class="flex flex-wrap gap-3 mb-12">
 <button class="px-8 py-3 rounded-full bg-primary text-white font-bold text-sm transition-all">Все</button>
-<button class="px-8 py-3 rounded-full bg-slate-200 dark:bg-slate-800 hover:bg-primary/10 hover:text-primary text-slate-600 dark:text-slate-300 font-bold text-sm transition-all border border-transparent hover:border-primary/30">Frontend</button>
-<button class="px-8 py-3 rounded-full bg-slate-200 dark:bg-slate-800 hover:bg-primary/10 hover:text-primary text-slate-600 dark:text-slate-300 font-bold text-sm transition-all border border-transparent hover:border-primary/30">Backend</button>
+<button class="px-8 py-3 rounded-full bg-slate-200 dark:bg-slate-800 hover:bg-primary/10 hover:text-primary-light text-slate-600 dark:text-slate-300 font-bold text-sm transition-all border border-transparent hover:border-primary/30">Frontend</button>
+<button class="px-8 py-3 rounded-full bg-slate-200 dark:bg-slate-800 hover:bg-primary/10 hover:text-primary-light text-slate-600 dark:text-slate-300 font-bold text-sm transition-all border border-transparent hover:border-primary/30">Backend</button>
 </div>
 <!-- Projects Grid -->
 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -111,12 +109,12 @@
 </div>
 </div>
 <div class="p-6 flex-1 flex flex-col">
-<h3 class="text-xl font-bold mb-3 group-hover:text-primary transition-colors">E-commerce Платформа</h3>
+<h3 class="text-xl font-bold mb-3 group-hover:text-primary-light transition-colors">E-commerce Платформа</h3>
 <p class="text-slate-500 dark:text-slate-400 text-sm mb-6 leading-relaxed flex-1">
                         Полнофункциональный интернет-магазин с корзиной, оплатой через Stripe и личным кабинетом пользователя.
                     </p>
 <div class="flex gap-3 mt-auto">
-<button class="flex-1 bg-primary text-white py-3 rounded-xl font-bold text-sm hover:brightness-110 transition-all flex items-center justify-center gap-2">
+<button class="flex-1 bg-primary text-white py-3 rounded-xl font-bold text-sm hover:brightness-110 transition-all flex items-center justify-center gap-2 shadow-[0_4px_20px_rgba(74,222,128,0.2)]">
 <span class="material-symbols-outlined text-lg" aria-hidden="true">visibility</span> Демо
                         </button>
 <button class="px-4 py-3 border border-slate-200 dark:border-slate-700 rounded-xl hover:bg-slate-100 dark:hover:bg-slate-800 transition-all">
@@ -135,12 +133,12 @@
 </div>
 </div>
 <div class="p-6 flex-1 flex flex-col">
-<h3 class="text-xl font-bold mb-3 group-hover:text-primary transition-colors">AI Аналитика</h3>
+<h3 class="text-xl font-bold mb-3 group-hover:text-primary-light transition-colors">AI Аналитика</h3>
 <p class="text-slate-500 dark:text-slate-400 text-sm mb-6 leading-relaxed flex-1">
                         Сервис анализа больших данных с использованием предобученных моделей машинного обучения для бизнеса.
                     </p>
 <div class="flex gap-3 mt-auto">
-<button class="flex-1 bg-primary text-white py-3 rounded-xl font-bold text-sm hover:brightness-110 transition-all flex items-center justify-center gap-2">
+<button class="flex-1 bg-primary text-white py-3 rounded-xl font-bold text-sm hover:brightness-110 transition-all flex items-center justify-center gap-2 shadow-[0_4px_20px_rgba(74,222,128,0.2)]">
 <span class="material-symbols-outlined text-lg" aria-hidden="true">visibility</span> Демо
                         </button>
 <button class="px-4 py-3 border border-slate-200 dark:border-slate-700 rounded-xl hover:bg-slate-100 dark:hover:bg-slate-800 transition-all">
@@ -159,12 +157,12 @@
 </div>
 </div>
 <div class="p-6 flex-1 flex flex-col">
-<h3 class="text-xl font-bold mb-3 group-hover:text-primary transition-colors">Крипто Кошелек</h3>
+<h3 class="text-xl font-bold mb-3 group-hover:text-primary-light transition-colors">Крипто Кошелек</h3>
 <p class="text-slate-500 dark:text-slate-400 text-sm mb-6 leading-relaxed flex-1">
                         Безопасный децентрализованный кошелек для управления криптоактивами и взаимодействия со смарт-контрактами.
                     </p>
 <div class="flex gap-3 mt-auto">
-<button class="flex-1 bg-primary text-white py-3 rounded-xl font-bold text-sm hover:brightness-110 transition-all flex items-center justify-center gap-2">
+<button class="flex-1 bg-primary text-white py-3 rounded-xl font-bold text-sm hover:brightness-110 transition-all flex items-center justify-center gap-2 shadow-[0_4px_20px_rgba(74,222,128,0.2)]">
 <span class="material-symbols-outlined text-lg" aria-hidden="true">visibility</span> Демо
                         </button>
 <button class="px-4 py-3 border border-slate-200 dark:border-slate-700 rounded-xl hover:bg-slate-100 dark:hover:bg-slate-800 transition-all">
@@ -183,12 +181,12 @@
 </div>
 </div>
 <div class="p-6 flex-1 flex flex-col">
-<h3 class="text-xl font-bold mb-3 group-hover:text-primary transition-colors">CRM Система</h3>
+<h3 class="text-xl font-bold mb-3 group-hover:text-primary-light transition-colors">CRM Система</h3>
 <p class="text-slate-500 dark:text-slate-400 text-sm mb-6 leading-relaxed flex-1">
                         Комплексная система управления клиентами и продажами с встроенным календарем и уведомлениями.
                     </p>
 <div class="flex gap-3 mt-auto">
-<button class="flex-1 bg-primary text-white py-3 rounded-xl font-bold text-sm hover:brightness-110 transition-all flex items-center justify-center gap-2">
+<button class="flex-1 bg-primary text-white py-3 rounded-xl font-bold text-sm hover:brightness-110 transition-all flex items-center justify-center gap-2 shadow-[0_4px_20px_rgba(74,222,128,0.2)]">
 <span class="material-symbols-outlined text-lg" aria-hidden="true">visibility</span> Демо
                         </button>
 <button class="px-4 py-3 border border-slate-200 dark:border-slate-700 rounded-xl hover:bg-slate-100 dark:hover:bg-slate-800 transition-all">
@@ -207,12 +205,12 @@
 </div>
 </div>
 <div class="p-6 flex-1 flex flex-col">
-<h3 class="text-xl font-bold mb-3 group-hover:text-primary transition-colors">Портфолио v2</h3>
+<h3 class="text-xl font-bold mb-3 group-hover:text-primary-light transition-colors">Портфолио v2</h3>
 <p class="text-slate-500 dark:text-slate-400 text-sm mb-6 leading-relaxed flex-1">
                         Предыдущая версия моего персонального сайта с акцентом на чистый код и быструю загрузку.
                     </p>
 <div class="flex gap-3 mt-auto">
-<button class="flex-1 bg-primary text-white py-3 rounded-xl font-bold text-sm hover:brightness-110 transition-all flex items-center justify-center gap-2">
+<button class="flex-1 bg-primary text-white py-3 rounded-xl font-bold text-sm hover:brightness-110 transition-all flex items-center justify-center gap-2 shadow-[0_4px_20px_rgba(74,222,128,0.2)]">
 <span class="material-symbols-outlined text-lg" aria-hidden="true">visibility</span> Демо
                         </button>
 <button class="px-4 py-3 border border-slate-200 dark:border-slate-700 rounded-xl hover:bg-slate-100 dark:hover:bg-slate-800 transition-all">
@@ -231,12 +229,12 @@
 </div>
 </div>
 <div class="p-6 flex-1 flex flex-col">
-<h3 class="text-xl font-bold mb-3 group-hover:text-primary transition-colors">SaaS Панель</h3>
+<h3 class="text-xl font-bold mb-3 group-hover:text-primary-light transition-colors">SaaS Панель</h3>
 <p class="text-slate-500 dark:text-slate-400 text-sm mb-6 leading-relaxed flex-1">
                         Панель управления для облачного сервиса с аналитикой в реальном времени и управлением подписками.
                     </p>
 <div class="flex gap-3 mt-auto">
-<button class="flex-1 bg-primary text-white py-3 rounded-xl font-bold text-sm hover:brightness-110 transition-all flex items-center justify-center gap-2">
+<button class="flex-1 bg-primary text-white py-3 rounded-xl font-bold text-sm hover:brightness-110 transition-all flex items-center justify-center gap-2 shadow-[0_4px_20px_rgba(74,222,128,0.2)]">
 <span class="material-symbols-outlined text-lg" aria-hidden="true">visibility</span> Демо
                         </button>
 <button class="px-4 py-3 border border-slate-200 dark:border-slate-700 rounded-xl hover:bg-slate-100 dark:hover:bg-slate-800 transition-all">
@@ -248,7 +246,7 @@
 </div>
 </main>
 <!-- Footer -->
-<footer class="border-t border-slate-200 dark:border-slate-800 py-12 px-6">
+<footer class="border-t border-slate-200 dark:border-slate-800 py-12 px-6 bg-[#040908]">
 <div class="max-w-7xl mx-auto flex flex-col items-center gap-6">
 <div class="flex items-center gap-8">
 <a class="w-12 h-12 rounded-full border border-slate-200 dark:border-slate-800 flex items-center justify-center hover:bg-primary hover:border-primary hover:text-white transition-all" href="#">

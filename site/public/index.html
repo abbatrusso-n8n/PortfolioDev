@@ -16,9 +16,10 @@
             theme: {
                 extend: {
                     colors: {
-                        "primary": "#6C63FF",
-                        "background-dark": "#0a0a0f",
-                        "card-dark": "#12121a"
+                        "primary": "#1a7a3c",
+                        "primary-light": "#4ade80",
+                        "background-dark": "#060e08",
+                        "card-dark": "#0d1c10"
                     },
                     fontFamily: {
                         "sans": ["Inter", "sans-serif"]
@@ -29,27 +30,24 @@
     </script>
 <style type="text/tailwindcss">
         body {
-            @apply bg-[#0a0a0f] text-slate-100;
+            @apply bg-[#060e08] text-slate-100;
         }
         .hero-glow {
-            background: radial-gradient(circle at 50% 50%, rgba(108, 99, 255, 0.08) 0%, rgba(10, 10, 15, 0) 70%);
+            background: radial-gradient(circle at 50% 50%, rgba(74, 222, 128, 0.07) 0%, rgba(6, 14, 8, 0) 70%);
         }
         .nav-link {
             @apply text-sm font-medium text-slate-400 hover:text-white transition-colors;
         }
         .skill-tag {
-            @apply px-5 py-2.5 rounded-full bg-[#161622] border border-white/5 text-sm font-medium text-slate-300 flex items-center gap-2 hover:border-primary/50 transition-colors;
+            @apply px-5 py-2.5 rounded-full bg-[#0d1c10] border border-white/5 text-sm font-medium text-slate-300 flex items-center gap-2 hover:border-primary/50 transition-colors;
         }
     </style>
 </head>
 <body class="antialiased">
-<header class="fixed top-0 z-50 w-full border-b border-white/5 bg-[#0a0a0f]/80 backdrop-blur-md">
+<header class="fixed top-0 z-50 w-full border-b border-white/5 bg-[#060e08]/80 backdrop-blur-md">
 <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
 <div class="flex items-center gap-3">
-<div class="size-9 bg-primary rounded-lg flex items-center justify-center text-white shadow-lg shadow-primary/20">
-<span class="material-symbols-outlined text-xl" aria-hidden="true">code</span>
-</div>
-<span class="text-xl font-bold tracking-tight">Имя Фамилия</span>
+<img src="/logo.png" alt="БАМБУК" class="h-10 w-auto">
 </div>
 <nav class="hidden md:flex items-center gap-10">
 <a class="nav-link text-white" href="/">Главная</a>
@@ -61,7 +59,7 @@
 <span class="material-symbols-outlined" id="menu-icon" aria-hidden="true">menu</span>
 </button>
 </div>
-<div id="mobile-menu" class="hidden md:hidden border-t border-white/5 bg-[#0a0a0f]/95 backdrop-blur-md">
+<div id="mobile-menu" class="hidden md:hidden border-t border-white/5 bg-[#060e08]/95 backdrop-blur-md">
 <div class="max-w-7xl mx-auto px-6 py-4 flex flex-col gap-1">
 <a class="px-4 py-3 rounded-xl text-white font-semibold text-sm hover:bg-white/5 transition-colors" href="/">Главная</a>
 <a class="px-4 py-3 rounded-xl text-slate-400 hover:text-white hover:bg-white/5 transition-colors font-medium text-sm" href="/about">Обо мне</a>
@@ -73,7 +71,7 @@
 <main>
 <section class="relative pt-44 pb-32 px-6 hero-glow overflow-hidden" id="about">
 <div class="max-w-7xl mx-auto flex flex-col items-center text-center">
-<div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-primary/10 border border-primary/20 text-primary text-xs font-bold uppercase tracking-wider mb-8">
+<div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-primary/10 border border-primary/20 text-primary-light text-xs font-bold uppercase tracking-wider mb-8">
 <span class="relative flex h-2 w-2">
 <span class="absolute inline-flex h-full w-full rounded-full bg-primary opacity-75"></span>
 <span class="relative inline-flex rounded-full h-2 w-2 bg-primary"></span>
@@ -81,7 +79,7 @@
                 Доступен для новых проектов
             </div>
 <h1 class="text-6xl lg:text-8xl font-black mb-6 tracking-tight">
-                Привет, я <span class="text-primary italic">[Имя]</span>
+                Привет, я <span class="text-primary-light italic">[Имя]</span>
 </h1>
 <h2 class="text-2xl lg:text-3xl font-medium text-slate-400 mb-8">
                 Full-Stack Разработчик
@@ -90,7 +88,7 @@
                 Создаю масштабируемые веб-приложения с акцентом на производительность и пользовательский опыт. Превращаю сложные бизнес-задачи в элегантные цифровые решения.
             </p>
 <div class="flex flex-col sm:flex-row items-center justify-center gap-5">
-<a href="/projects" class="w-full sm:w-auto bg-primary hover:bg-primary/90 text-white px-10 py-4 rounded-xl font-bold text-lg transition-all shadow-xl shadow-primary/20 flex items-center justify-center gap-2 group">
+<a href="/projects" class="w-full sm:w-auto bg-primary hover:bg-primary/90 text-white px-10 py-4 rounded-xl font-bold text-lg transition-all shadow-[0_4px_20px_rgba(74,222,128,0.2)] flex items-center justify-center gap-2 group">
                     Мои проекты
                     <span class="material-symbols-outlined group-hover:translate-x-1 transition-transform" aria-hidden="true">arrow_forward</span>
 </a>
@@ -108,27 +106,27 @@
 </div>
 <div class="flex flex-wrap gap-4">
 <div class="skill-tag">
-<span class="material-symbols-outlined text-primary text-xl" aria-hidden="true">javascript</span>
+<span class="material-symbols-outlined text-primary-light text-xl" aria-hidden="true">javascript</span>
                     JavaScript
                 </div>
 <div class="skill-tag">
-<span class="material-symbols-outlined text-primary text-xl" aria-hidden="true">code</span>
+<span class="material-symbols-outlined text-primary-light text-xl" aria-hidden="true">code</span>
                     TypeScript
                 </div>
 <div class="skill-tag">
-<span class="material-symbols-outlined text-primary text-xl" aria-hidden="true">hub</span>
+<span class="material-symbols-outlined text-primary-light text-xl" aria-hidden="true">hub</span>
                     React
                 </div>
 <div class="skill-tag">
-<span class="material-symbols-outlined text-primary text-xl" aria-hidden="true">dns</span>
+<span class="material-symbols-outlined text-primary-light text-xl" aria-hidden="true">dns</span>
                     Node.js
                 </div>
 <div class="skill-tag">
-<span class="material-symbols-outlined text-primary text-xl" aria-hidden="true">data_object</span>
+<span class="material-symbols-outlined text-primary-light text-xl" aria-hidden="true">data_object</span>
                     Python
                 </div>
 <div class="skill-tag">
-<span class="material-symbols-outlined text-primary text-xl" aria-hidden="true">source_environment</span>
+<span class="material-symbols-outlined text-primary-light text-xl" aria-hidden="true">source_environment</span>
                     Git
                 </div>
 </div>
@@ -149,16 +147,16 @@
 </div>
 <div class="p-8">
 <div class="flex gap-3 mb-5">
-<span class="text-[10px] font-bold tracking-widest text-primary uppercase">Next.js</span>
-<span class="text-[10px] font-bold tracking-widest text-primary uppercase">TypeScript</span>
+<span class="text-[10px] font-bold tracking-widest text-primary-light uppercase">Next.js</span>
+<span class="text-[10px] font-bold tracking-widest text-primary-light uppercase">TypeScript</span>
 </div>
 <h3 class="text-2xl font-bold mb-3">E-commerce Платформа</h3>
 <p class="text-slate-400 text-sm mb-8 leading-relaxed">
                             Полнофункциональный интернет-магазин с интеграцией платежной системы и админ-панелью для управления товарами.
                         </p>
 <a class="inline-flex items-center gap-2 text-white font-bold text-sm group/link" href="#">
-                            Смотреть проект 
-                            <span class="material-symbols-outlined text-primary group-hover/link:translate-x-1 transition-transform" aria-hidden="true">arrow_outward</span>
+                            Смотреть проект
+                            <span class="material-symbols-outlined text-primary-light group-hover/link:translate-x-1 transition-transform" aria-hidden="true">arrow_outward</span>
 </a>
 </div>
 </div>
@@ -168,16 +166,16 @@
 </div>
 <div class="p-8">
 <div class="flex gap-3 mb-5">
-<span class="text-[10px] font-bold tracking-widest text-primary uppercase">React</span>
-<span class="text-[10px] font-bold tracking-widest text-primary uppercase">D3.js</span>
+<span class="text-[10px] font-bold tracking-widest text-primary-light uppercase">React</span>
+<span class="text-[10px] font-bold tracking-widest text-primary-light uppercase">D3.js</span>
 </div>
 <h3 class="text-2xl font-bold mb-3">Аналитическая панель</h3>
 <p class="text-slate-400 text-sm mb-8 leading-relaxed">
                             Система визуализации данных реального времени с интерактивными графиками, фильтрами и генерацией отчетов.
                         </p>
 <a class="inline-flex items-center gap-2 text-white font-bold text-sm group/link" href="#">
-                            Смотреть проект 
-                            <span class="material-symbols-outlined text-primary group-hover/link:translate-x-1 transition-transform" aria-hidden="true">arrow_outward</span>
+                            Смотреть проект
+                            <span class="material-symbols-outlined text-primary-light group-hover/link:translate-x-1 transition-transform" aria-hidden="true">arrow_outward</span>
 </a>
 </div>
 </div>
@@ -187,16 +185,16 @@
 </div>
 <div class="p-8">
 <div class="flex gap-3 mb-5">
-<span class="text-[10px] font-bold tracking-widest text-primary uppercase">Node.js</span>
-<span class="text-[10px] font-bold tracking-widest text-primary uppercase">Redis</span>
+<span class="text-[10px] font-bold tracking-widest text-primary-light uppercase">Node.js</span>
+<span class="text-[10px] font-bold tracking-widest text-primary-light uppercase">Redis</span>
 </div>
 <h3 class="text-2xl font-bold mb-3">Task Manager API</h3>
 <p class="text-slate-400 text-sm mb-8 leading-relaxed">
                             Высокопроизводительный REST API для управления задачами с поддержкой многопользовательского режима и уведомлений.
                         </p>
 <a class="inline-flex items-center gap-2 text-white font-bold text-sm group/link" href="#">
-                            Смотреть проект 
-                            <span class="material-symbols-outlined text-primary group-hover/link:translate-x-1 transition-transform" aria-hidden="true">arrow_outward</span>
+                            Смотреть проект
+                            <span class="material-symbols-outlined text-primary-light group-hover/link:translate-x-1 transition-transform" aria-hidden="true">arrow_outward</span>
 </a>
 </div>
 </div>
@@ -210,7 +208,7 @@
                 Я всегда открыт для новых возможностей и интересных задач. Давайте создадим что-то впечатляющее вместе!
             </p>
 <div class="flex flex-wrap items-center justify-center gap-4">
-<a class="bg-primary hover:bg-primary/90 text-white px-10 py-5 rounded-2xl font-bold text-lg transition-all flex items-center gap-3 shadow-xl shadow-primary/20" href="mailto:hello@example.com">
+<a class="bg-primary hover:bg-primary/90 text-white px-10 py-5 rounded-2xl font-bold text-lg transition-all flex items-center gap-3 shadow-[0_4px_20px_rgba(74,222,128,0.2)]" href="mailto:hello@example.com">
 <span class="material-symbols-outlined" aria-hidden="true">mail</span>
                     Написать мне
                 </a>
@@ -218,21 +216,18 @@
 </div>
 </section>
 </main>
-<footer class="border-t border-white/5 py-12 px-6 bg-[#07070a]">
+<footer class="border-t border-white/5 py-12 px-6 bg-[#040908]">
 <div class="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-8">
 <div class="flex items-center gap-3">
-<div class="size-7 bg-primary rounded flex items-center justify-center text-white">
-<span class="material-symbols-outlined text-lg" aria-hidden="true">code</span>
-</div>
-<span class="font-bold text-lg">Имя Фамилия</span>
+<img src="/logo.png" alt="БАМБУК" class="h-8 w-auto">
 </div>
 <p class="text-sm text-slate-500 order-3 md:order-2">
             © 2026 Разработано с использованием передовых технологий.
         </p>
 <div class="flex items-center gap-8 order-2 md:order-3">
-<a class="text-xs font-bold uppercase tracking-widest text-slate-400 hover:text-primary transition-colors" href="#">GitHub</a>
-<a class="text-xs font-bold uppercase tracking-widest text-slate-400 hover:text-primary transition-colors" href="#">LinkedIn</a>
-<a class="text-xs font-bold uppercase tracking-widest text-slate-400 hover:text-primary transition-colors" href="#">Telegram</a>
+<a class="text-xs font-bold uppercase tracking-widest text-slate-400 hover:text-primary-light transition-colors" href="#">GitHub</a>
+<a class="text-xs font-bold uppercase tracking-widest text-slate-400 hover:text-primary-light transition-colors" href="#">LinkedIn</a>
+<a class="text-xs font-bold uppercase tracking-widest text-slate-400 hover:text-primary-light transition-colors" href="#">Telegram</a>
 </div>
 </div>
 </footer>
