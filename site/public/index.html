@@ -237,6 +237,7 @@
 import { Renderer, Triangle, Program, Mesh } from 'https://esm.sh/ogl';
 
 (function initPrism() {
+  if (window.innerWidth < 768) return;
   const container = document.getElementById('prism-bg');
   if (!container) return;
 
